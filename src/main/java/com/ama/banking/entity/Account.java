@@ -21,9 +21,13 @@ public class Account {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
-	@Column(name="account_holder_name")
+	@Column(name="accountHolderName")
 	private String accountHolderName;
 	private Double balance;
+	
+	public Account() {
+		
+	}
 	
 	public Account(Long id, String accountHolderName, double balance) {
 		this.id=id;
